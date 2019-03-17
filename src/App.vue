@@ -2,11 +2,11 @@
   <div id="app">
     <nav-bar> </nav-bar>
 
-    <img src="/imgs/adds/sideimglcut.png" alt="" class="side_img side_img-l">
-    <img src="/imgs/adds/sideimgrcut.png" alt="" class="side_img side_img-r">
+    <img src="imgs/adds/sideimglcut.png" alt="" class="side_img side_img-l">
+    <img src="imgs/adds/sideimgrcut.png" alt="" class="side_img side_img-r">
 
     <b-container class="bv-example-row">
-      <main-gallery></main-gallery>
+      <main-gallery class="mt-3"></main-gallery>
       <b-row>
         
       </b-row>
@@ -55,16 +55,16 @@ export default {
     position: absolute;
     top: 10%;
     opacity: 0.5;
-    width: 220px;
+    width: 120px;
     height: auto;
   }
   .side_img-l {
       left: 0px;
-      margin-left: -50px;
+      /* margin-left: -50px; */
   }
     .side_img-r {
       right: 0px;
-      margin-right: -50px;
+      /* margin-right: -50px; */
   }
 
 </style>

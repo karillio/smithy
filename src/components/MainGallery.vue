@@ -20,12 +20,12 @@ export default {
     data(){
         return {
             list: [
-                {title:'Ворота',url:'/imgs/maingallery/g1.jpg'},
-                {title:'Новобудова',url:'/imgs/maingallery/g2.jpg'},
-                {title:'Спарта!',url:'/imgs/maingallery/g3.jpg'},
-                {title:'Ворота',url:'/imgs/maingallery/g4.jpg'},
-                {title:'Перила',url:'/imgs/maingallery/g5.jpg'},
-                {title:'Сходи',url:'/imgs/maingallery/g6.jpg'},
+                {title:'Ворота',url:'./imgs/maingallery/g1.jpg'},
+                {title:'Новобудова',url:'./imgs/maingallery/g2.jpg'},
+                {title:'Спарта!',url:'./imgs/maingallery/g3.jpg'},
+                {title:'Ворота',url:'./imgs/maingallery/g4.jpg'},
+                {title:'Перила',url:'./imgs/maingallery/g5.jpg'},
+                {title:'Сходи',url:'./imgs/maingallery/g6.jpg'},
             ]
         }
     }

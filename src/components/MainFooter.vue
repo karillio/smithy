@@ -1,7 +1,7 @@
 <template>
         <div> 
-            <img id="fire" src="/imgs/adds/fire-burning-animated-gif-image_transparent.gif" alt="On Fire">
-            <img id="fire2" src="/imgs/adds/fire-burning-animated-gif-image-70_transparent.gif" alt="On Fire">
+            <img id="fire" src="imgs/adds/fire-burning-animated-gif-image_transparent.gif" alt="On Fire">
+            <img id="fire2" src="imgs/adds/fire-burning-animated-gif-image-70_transparent.gif" alt="On Fire">
             <canvas id="canvas"></canvas>
         </div>
 </template>
@@ -32,9 +32,10 @@ export default {
         var canvas = document.getElementById("canvas"),
             ctx = canvas.getContext("2d");
 
+        console.log(document.body.offsetWidth);
 
         canvas.height = document.body.offsetHeight/2 ;//+ 500;
-        canvas.width = 2500;
+        canvas.width = document.body.offsetWidth; //$('body').width; // 2500
 
         // console.log('canvas.width', canvas.width);
 
@@ -159,7 +160,7 @@ export default {
 
         // smokeImage.src = "http://somethinghitme.com/projects/particle%20test/images/smoke.png";
         // smokeImage.src = "./smoke.png";
-        smokeImage.src = "/imgs/adds/smoke1.jpg";
+        smokeImage.src = "imgs/adds/smoke1.jpg";
         // smokeImage.src = "./smoke2.png";
         // smokeImage.src = "./smoke3.png";
         // smokeImage.src = "./cloud1.png";
@@ -184,7 +185,7 @@ export default {
     #canvas {
         position:absolute;
         margin-left : 0;
-        left: -100px;
+        /* left: -100px; */
         bottom: -180px;
     }
 
@@ -193,8 +194,8 @@ export default {
         opacity: 0.2;
         position: absolute;
         bottom: -100px;
-        left: 100px;
-        width: 400px;
+        left: 10%;
+        width: 300px;
     }
 
     #fire2 {
@@ -202,8 +203,8 @@ export default {
         opacity: 0.1;
         position: absolute;
         bottom: -60px;
-        right: 400px;
-        width: 400px;
+        right: 10%;
+        width: 300px;
     }
 
 
