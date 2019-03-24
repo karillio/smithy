@@ -27,6 +27,8 @@
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "v-gallery": "^1.2.4",
+    "vue-resource": "^1.5.1",
+    "vue-router": "^3.0.2",
     "vue-template-compiler": "^2.6.9"
   },
   "babel": {

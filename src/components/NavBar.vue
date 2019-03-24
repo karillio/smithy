@@ -2,7 +2,7 @@
 
   <b-navbar toggleable="lg" type="dark" variant="dark">
     <img src="imgs/adds/logo.png" alt="Кузня Пальмира" class="main_page_logo">
-    <b-navbar-brand href="#" class="mx-3 text-uppercase">
+    <b-navbar-brand href="#" class="mx-3 ml-5 text-uppercase">
         Кузня Пальмира
     </b-navbar-brand>
 
@@ -11,11 +11,12 @@
     <b-navbar-toggle target="nav_collapse" />
 
     <b-collapse is-nav id="nav_collapse">
-      <img src="imgs/adds/mycenter.svg" alt="" class="nav-center-img text-center ml-5 pl-5 w-50">
+      <!-- <img src="imgs/adds/mycenter.svg" alt="" class="nav-center-img text-center ml-5 pl-2 w-50"> -->
       <b-navbar-nav class="ml-auto">
+        <b-nav-item href="/" class="mx-3">Главная</b-nav-item>
         <b-nav-item href="#" class="mx-3">Работы</b-nav-item>
         <b-nav-item href="#" class="mx-3">Команда</b-nav-item>
-        <b-nav-item href="#" class="mx-3">Контакт</b-nav-item>
+        <b-nav-item href="/contact" class="mx-3">Контакт</b-nav-item>
       </b-navbar-nav>
 
     </b-collapse>
