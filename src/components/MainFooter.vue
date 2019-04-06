@@ -27,23 +27,20 @@ export default {
             window.requestAnimationFrame = requestAnimationFrame;
         })();
 
-        console.log(document.getElementById("canvas"));
 
         var canvas = document.getElementById("canvas"),
             ctx = canvas.getContext("2d");
 
-        console.log(document.body.offsetWidth);
 
         canvas.height = document.body.offsetHeight/2 ;//+ 500;
         canvas.width = document.body.offsetWidth; //$('body').width; // 2500
 
-        // console.log('canvas.width', canvas.width);
 
         var parts = [],
             minSpawnTime = 90,
             lastTime = new Date().getTime(),
             maxLifeTime = Math.min(8000, (canvas.height/(1.5*60)*1000)),
-            emitterX = canvas.width / 2,
+            //emitterX = canvas.width / 2,
             emitterY = canvas.height - 10,
             smokeImage = new Image();
 
@@ -126,7 +123,7 @@ export default {
             requestAnimationFrame(render);
         }
 
-        function smoke(x, y, index) {
+        function smoke(x, y/*, index*/) {
             this.x = x;
             this.y = y;
 
