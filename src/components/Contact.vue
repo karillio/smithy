@@ -73,12 +73,11 @@ export default {
 				}
 
 				// Send form to server	
-				this.$http.post('https://formspree.io/stefan2907@gmail.com', form).then((response) => {
-					//console.log(response);
+				this.$http.post('https://formspree.io/stefan2907@gmail.com', form).then(() => {
 					this.clearForm();
 					this.isSending = false;
 				}).catch(() => {
-					//console.log(e);
+		
 				});
 
 			}, 1000);

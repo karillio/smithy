@@ -55,9 +55,11 @@ const messages = {
     }
 };
 
+var defaultLocale = 'uk';
+
 const i18n = new VueI18n({
-    locale: 'uk', // set locale
-    fallbackLocale: 'uk', // set fallback locale
+    locale: (locale.trim().length && locale != "/") ? locale : defaultLocale ,//'uk', // set locale
+    fallbackLocale: defaultLocale, // set fallback locale
     messages, // set locale messages
 });
 
