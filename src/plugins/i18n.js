@@ -58,7 +58,7 @@ const messages = {
 var defaultLocale = 'uk';
 
 const i18n = new VueI18n({
-    locale: (locale.trim().length && locale != "/") ? locale : defaultLocale ,//'uk', // set locale
+    locale: 'uk', // set locale
     fallbackLocale: defaultLocale, // set fallback locale
     messages, // set locale messages
 });

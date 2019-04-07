@@ -6,16 +6,29 @@ import i18n from '@/plugins/i18n';
 
 Vue.use(Router)
 
+const routes =  [
+    {
+        path: "",
+        name: 'MainPage',
+        component: MainPage
+    },
+    {
+        path: 'contact',
+        name: 'Contact',
+        component: Contact
+    }
+]
+
 export default new Router({
     mode: 'history',
     routes: routes,
-    
+    /*
     routes: [        
         {
             path: '/:lang',
-            // component: {
-            //     template: '<router-view></router-view>'
-            // },
+            component: {
+                template: '<router-view></router-view>'
+            },
     
             beforeEnter (to, from, next) {
                 const lang = to.params.lang;
@@ -38,7 +51,7 @@ export default new Router({
             ]
         }
     ]
-    
+    */
 
 })
 
