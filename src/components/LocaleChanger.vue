@@ -1,10 +1,13 @@
 <template>
   <div class="locale-changer mx-1">
-    <b-form-select v-model="$i18n.locale" :options="options" class="btn-dark locale-changer-select"></b-form-select>
+    <b-form-select ref="lang_changer" v-model="$i18n.locale" :options="options" class="btn-dark locale-changer-select"></b-form-select>
   </div>
 </template>
 
 <script>
+
+import i18n from '@/plugins/i18n';
+
 export default {
   name: 'locale-changer',
   data () {
@@ -23,6 +26,12 @@ export default {
     //   e.preventDefault();
     //   console.log('test');
     // }
+  },
+  computed: {
+    language: function () {
+      console.log('i18n.local', i18n.locale);
+      return i18n.locale;
+    }
   }
 }
 </script>

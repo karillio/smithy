@@ -6,7 +6,6 @@
 
       <div v-if="isSending" class="loading">Sendig...</div>
 
-<!-- class="form" @submit="onSubmit" -->
       <form action="https://formspree.io/stefan2907@gmail.com" method="POST" class="form"> 
 
         <input type="hidden" name="_next" value="/">

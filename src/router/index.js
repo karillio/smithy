@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import MainPage from '@/components/MainPage'
 import Contact from '@/components/Contact'
-import i18n from '@/plugins/i18n';
+// import i18n from '@/plugins/i18n';
 
 Vue.use(Router)
 
@@ -13,7 +13,7 @@ const routes =  [
         component: MainPage
     },
     {
-        path: 'contact',
+        path: '/contact',
         name: 'Contact',
         component: Contact
     }
